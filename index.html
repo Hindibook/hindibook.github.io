@@ -1,123 +1,75 @@
-<!doctype html>
-<html lang="hi">
+
+      <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Hindibook — Coming Soon</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff6b6b;--muted:#94a3b8}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071028 0%,var(--bg) 100%);color:#e6eef8;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter:blur(6px);max-width:960px;width:100%;border-radius:18px;padding:36px;display:grid;grid-template-columns:1fr 360px;gap:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
-    .brand{display:flex;align-items:center;gap:14px}
-    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffb86b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#071022}
-    h1{margin:8px 0 6px;font-size:28px}
-    p.lead{color:var(--muted);margin:0 0 18px}
-    .features{display:flex;flex-direction:column;gap:10px;margin-top:12px}
-    .feat{display:flex;gap:10px;align-items:flex-start}
-    .dot{width:10px;height:10px;border-radius:3px;background:linear-gradient(180deg,#fff,#ffd1c1);margin-top:6px}
-    .right{padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px}
-    .countdown{display:flex;gap:10px;justify-content:space-between;margin-bottom:18px}
-    .time{background:rgba(255,255,255,0.03);padding:14px;border-radius:8px;min-width:64px;text-align:center}
-    .time .num{font-size:20px;font-weight:700}
-    .time .lbl{font-size:11px;color:var(--muted);margin-top:6px}
-
-    form{display:flex;gap:8px}
-    input[type=email]{flex:1;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;outline:none}
-    button{padding:12px 14px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),#ffb86b);color:#071022;font-weight:600;cursor:pointer}
-    .socials{display:flex;gap:8px;margin-top:14px}
-    .badge{font-size:12px;color:var(--muted);padding:6px 8px;border-radius:999px;border:1px solid rgba(255,255,255,0.03)}
-
-    @media (max-width:880px){.card{grid-template-columns:1fr;}
-      .right{order:-1}
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hindi Book PDF Download</title>
+  <link rel="icon" href="https://www.hindibook.in/favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <main class="card" role="main">
-    <section>
-      <div class="brand">
-        <div class="logo">HB</div>
-        <div>
-          <div style="font-size:12px;color:var(--muted)">हिन्दी डिजिटल लाइब्रेरी</div>
-          <h1>Hindibook — जल्द ही आ रहा है</h1>
-          <p class="lead">हिन्दी पुस्तकों का आपका अपना डिजिटल संग्रह। पढ़ने के शौकीनों के लिए चुनिंदा किताबें, सुविधाजनक खोज और अधिक।</p>
-        </div>
-      </div>
+<body class="bg-gray-50 font-sans">
 
-      <div class="features">
-        <div class="feat"><div class="dot"></div><div><strong>रिच कलेक्शन</strong><div style="color:var(--muted);font-size:13px">क्लासिक्स से लेकर समकालीन — हिंदी में।</div></div></div>
-        <div class="feat"><div class="dot"></div><div><strong>रीडर-फ्रेंडली</strong><div style="color:var(--muted);font-size:13px">किसी भी डिवाइस पर आराम से पढ़ें।</div></div></div>
-        <div class="feat"><div class="dot"></div><div><strong>नियमित अपडेट</strong><div style="color:var(--muted);font-size:13px">नए शीर्षक और फीचर्स लगातार जोड़े जाएंगे।</div></div></div>
+  <header class="bg-white shadow-md">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+    <a href="#" class="flex items-center">
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh3JzcliOF9OWWn08aYMRdCqrCPUxwREWLmGDI0Icmv3MeXPeMBN-7LT5mdlSDLcJBmmUYuwimapuDWVHDMogEGzYQl802WNQo25dmMpfG3tZ7oREYd-h71kPyxBNJk9DDL2nsn1ZwSt_3U-s8Q-dYgc5inG3UT_LiRObESHmPIlDl40y_cTV78M24rNRg=s1600" alt="Hindibook.in Logo" class="h-12 mr-3" />
+      
+    </a>
+    <nav class="space-x-4 mt-2 md:mt-0">
+      <a href="#categories" class="text-gray-700 hover:underline">Categories</a>
+      <a href="#featured" class="text-gray-700 hover:underline">Featured</a>
+      <a href="https://hindibook.in" target="_blank" class="text-gray-700 hover:underline">Hindibook.in</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container mx-auto px-4 py-8">
+
+    <section class="mb-8">
+      <input type="text" placeholder="Search books by title, author, or subject..." class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600" />
+    </section>
+
+    <section id="categories" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-red-700">Book Categories</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        <div class="bg-white p-4 shadow rounded hover:shadow-lg cursor-pointer text-center">Novels</div>
+        <div class="bg-white p-4 shadow rounded hover:shadow-lg cursor-pointer text-center">History</div>
+        <div class="bg-white p-4 shadow rounded hover:shadow-lg cursor-pointer text-center">Hindu Books</div>
+        <div class="bg-white p-4 shadow rounded hover:shadow-lg cursor-pointer text-center">Poetry & Shayari</div>
+        <div class="bg-white p-4 shadow rounded hover:shadow-lg cursor-pointer text-center">Math Books</div>
+      </div> 
+    </section>
+
+    <section id="featured">
+      <h2 class="text-2xl font-semibold mb-4 text-red-700">Featured Books</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow p-4 hover:shadow-lg">
+          <h3 class="font-bold mb-2">Hindi C Language Book PDF</h3>
+          <p class="mb-4 text-gray-700">Learn C programming in Hindi with this free PDF book.</p>
+          <a href="https://www.hindibook.in/2025/02/c-language-hindi-book-pdf-free-download.html" target="_blank" class="text-red-600 font-semibold hover:underline">Download PDF</a>
+        </div>
+        <div class="bg-white rounded shadow p-4 hover:shadow-lg">
+          <h3 class="font-bold mb-2">Novel Collection</h3>
+          <p class="mb-4 text-gray-700">Explore a rich collection of Hindi novels in PDF format.</p>
+          <a href="https://www.hindibook.in/search/label/Novel%20Books" target="_blank" class="text-red-600 font-semibold hover:underline">View Novels</a>
+        </div>
+        <div class="bg-white rounded shadow p-4 hover:shadow-lg">
+          <h3 class="font-bold mb-2">Poetry & Shayari</h3>
+          <p class="mb-4 text-gray-700">Download Hindi poetry and Shayari books for free.</p>
+          <a href="https://www.hindibook.in/search/label/Poetry%20And%20Shayari%20Books" target="_blank" class="text-red-600 font-semibold hover:underline">Explore Poetry</a>
+        </div>
       </div>
     </section>
 
-    <aside class="right">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
-        <div class="badge">लॉन्च: <strong id="launch-date">December 1, 2025</strong></div>
-        <div style="font-size:13px;color:var(--muted)">सदस्यता लें — एक्सक्लूसिव अपडेट</div>
-      </div>
-
-      <div class="countdown" aria-hidden="false">
-        <div class="time"><div class="num" id="days">00</div><div class="lbl">दिन</div></div>
-        <div class="time"><div class="num" id="hours">00</div><div class="lbl">घंटे</div></div>
-        <div class="time"><div class="num" id="minutes">00</div><div class="lbl">मिनट</div></div>
-        <div class="time"><div class="num" id="seconds">00</div><div class="lbl">सेकंड</div></div>
-      </div>
-
-      <form id="subscribeForm" onsubmit="return false;">
-        <input type="email" id="email" placeholder="अपना ईमेल दर्ज करें" required>
-        <button id="joinBtn">जुड़ें</button>
-      </form>
-
-      <div id="msg" style="margin-top:12px;font-size:13px;color:var(--muted)"></div>
-
-      <div class="socials">
-        <a class="badge" href="#" aria-label="Facebook">Facebook</a>
-        <a class="badge" href="#" aria-label="Twitter">X</a>
-        <a class="badge" href="#" aria-label="Instagram">Instagram</a>
-      </div>
-    </aside>
-
   </main>
 
-  <script>
-    // Set launch date (change as needed) — use ISO format for consistency
-    const launch = new Date('2025-12-01T00:00:00+05:30');
+  <footer class="bg-gray-200 text-center py-4 mt-12">
+    <p class="text-gray-600 text-sm">
+      This is a GitHub-hosted site. Visit the original site at 
+      <a href="https://hindibook.in" target="_blank" class="text-red-600 font-semibold hover:underline">Hindibook.in</a>
+    </p>
+  </footer>
 
-    function updateCountdown(){
-      const now = new Date();
-      let diff = Math.max(0, Math.floor((launch - now) / 1000));
-      const days = Math.floor(diff / 86400); diff %= 86400;
-      const hours = Math.floor(diff / 3600); diff %= 3600;
-      const minutes = Math.floor(diff / 60); const seconds = diff % 60;
-      document.getElementById('days').textContent = String(days).padStart(2,'0');
-      document.getElementById('hours').textContent = String(hours).padStart(2,'0');
-      document.getElementById('minutes').textContent = String(minutes).padStart(2,'0');
-      document.getElementById('seconds').textContent = String(seconds).padStart(2,'0');
-    }
-    updateCountdown(); setInterval(updateCountdown, 1000);
-
-    // Handle subscription — calls POST /subscribe with JSON {email:..}
-    document.getElementById('subscribeForm').addEventListener('submit', async e=>{
-      const email = document.getElementById('email').value.trim();
-      if(!email) return;
-      const msg = document.getElementById('msg');
-      msg.textContent = 'सेंड कर रहे हैं...';
-      try{
-        const resp = await fetch('/subscribe', {
-          method:'POST', headers:{'Content-Type':'application/json'},
-          body: JSON.stringify({email})
-        });
-        if(resp.ok){ msg.textContent = 'धन्यवाद! हमने आपको सूची में जोड़ लिया।'; document.getElementById('email').value=''; }
-        else{ const t = await resp.text(); msg.textContent = 'त्रुटि: '+t; }
-      }catch(err){ msg.textContent = 'नेटवर्क त्रुटि — बाद में फिर कोशिश करें।'; }
-    });
-
-    // Progressive enhancement: also support pressing Enter on input
-    document.getElementById('joinBtn').addEventListener('click', ()=>document.getElementById('subscribeForm').dispatchEvent(new Event('submit')));
-  </script>
 </body>
 </html>
