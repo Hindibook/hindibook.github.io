@@ -21,6 +21,6 @@ function showAlsoRead(data) {
 // Load blog feed dynamically
 (function() {
   var script = document.createElement('script');
-  script.src = "https://bangla.pustakalay.in.in/feeds/posts/default?alt=json-in-script&callback=showAlsoRead";
+  script.src = "https://bangla.pustakalay.in/feeds/posts/default?alt=json-in-script&callback=showAlsoRead";
   document.body.appendChild(script);
 })();
