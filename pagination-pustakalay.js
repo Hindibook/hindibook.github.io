@@ -1,5 +1,5 @@
 /*<![CDATA[*/
-var postperpage = 13;   // Posts per page
+var postperpage = 19;   // Posts per page
 var numshowpage = 3;   // How many middle numbers to show
 var upPageWord = '« Previous Page';
 var downPageWord = 'Next Page »';
