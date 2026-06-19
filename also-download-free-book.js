@@ -1,26 +1,41 @@
-var numPosts = 6;  // Number of links
+const numPosts = 6;
 
-function showAlsoRead(data) {
-  var entries = data.feed.entry;
-  var ul = document.getElementById("also-read");
+function showAlsoRead(json) {
+  const container = document.getElementById("also-read");
 
-  // Shuffle posts randomly
-  entries.sort(() => 0.5 - Math.random());
+  if (!container || !json.feed || !json.feed.entry) return;
 
-  // Pick only numPosts
-  entries.slice(0, numPosts).forEach(entry => {
-    // Replace | with - in post title
-    var title = entry.title.$t.replace(/\|/g, " - ");
-    var link = entry.link.find(l => l.rel === "alternate").href;
-    var li = document.createElement("li");
-    li.innerHTML = '<a href="' + link + '" target="_blank">' + title + '</a>';
-    ul.appendChild(li);
+  const entries = json.feed.entry.slice();
+
+  // Randomize posts
+  entries.sort(() => Math.random() - 0.5);
+
+  container.innerHTML = "";
+
+  entries.slice(0, numPosts).forEach(post => {
+    const title = (post.title?.$t || "Untitled").replace(/\|/g, " - ");
+
+    let link = "#";
+    if (post.link) {
+      const altLink = post.link.find(item => item.rel === "alternate");
+      if (altLink) link = altLink.href;
+    }
+
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+
+    a.href = link;
+    a.textContent = title;
+    a.title = title;
+    a.rel = "noopener";
+
+    li.appendChild(a);
+    container.appendChild(li);
   });
 }
 
-// Load blog feed dynamically
-(function() {
-  var script = document.createElement('script');
-  script.src = "https://www.pustakalay.in/feeds/posts/default?alt=json-in-script&callback=showAlsoRead";
+(function () {
+  const script = document.createElement("script");
+  script.src = "https://holybooks.in/feeds/posts/default?alt=json-in-script&max-results=50&callback=showAlsoRead";
   document.body.appendChild(script);
 })();
