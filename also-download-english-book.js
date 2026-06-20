@@ -21,6 +21,6 @@ function showAlsoRead(data) {
 // Load blog feed dynamically
 (function() {
   var script = document.createElement('script');
-  script.src = "https://holybooks.in/feeds/posts/default?alt=json-in-script&callback=showAlsoRead";
+  script.src = "https://holybooks.in/feeds/posts/default?alt=json-in-script&callback=showAlsoRead&max-results=50";
   document.body.appendChild(script);
 })();
