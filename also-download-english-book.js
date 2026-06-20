@@ -1,4 +1,3 @@
-<ul id="also-read"></ul><script>
 var numPosts = 6;
 
 function showAlsoRead(data) {
@@ -41,4 +40,3 @@ function showAlsoRead(data) {
   script.src = "https://www.holybooks.in/feeds/posts/default?alt=json-in-script&callback=showAlsoRead&max-results=50";
   document.body.appendChild(script);
 })();
-</script>
